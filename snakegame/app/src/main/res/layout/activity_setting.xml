@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="com.amit.snakegame.SettingActivity"
+    android:background="#0C0B00"
+    >
+
+
+    <RadioButton
+        android:id="@+id/povRadio"
+        android:layout_width="119dp"
+        android:layout_height="51dp"
+        android:text="@string/point_of_view"
+        android:textColor="#E5E7EF"
+        app:layout_constraintBottom_toBottomOf="@+id/controlButton"
+        app:layout_constraintEnd_toStartOf="@+id/dualRadio"
+        app:layout_constraintStart_toEndOf="@+id/controlButton"
+        app:layout_constraintTop_toTopOf="@+id/controlButton"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <RadioButton
+        android:id="@+id/dualRadio"
+        android:layout_width="116dp"
+        android:layout_height="46dp"
+        android:text="@string/dual"
+        app:layout_constraintBottom_toBottomOf="@+id/povRadio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/povRadio"
+        app:layout_constraintTop_toTopOf="@+id/povRadio"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    <Button
+        android:id="@+id/newGameButton"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="#FEFEFF"
+        android:freezesText="false"
+        android:text="@string/new_game"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#00040E"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.385" />
+
+    <Button
+        android:id="@+id/controlButton"
+        android:layout_width="77dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:background="#FFC107"
+        android:text="@string/control"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#FC000202"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/soundButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newGameButton" />
+
+    <Button
+        android:id="@+id/soundButton"
+        android:layout_width="75dp"
+        android:layout_height="45dp"
+        android:background="#FFC107"
+        android:text="@string/sound"
+        android:textColor="#010213"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/controlButton"
+        app:layout_constraintTop_toBottomOf="@+id/controlButton" />
+
+    <RadioButton
+        android:id="@+id/soundOnRadio"
+        android:layout_width="110dp"
+        android:layout_height="43dp"
+
+        android:text="@string/on"
+        app:layout_constraintBottom_toBottomOf="@+id/soundButton"
+        app:layout_constraintEnd_toStartOf="@+id/soundOffRadio"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/soundButton"
+        app:layout_constraintTop_toTopOf="@+id/soundButton"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RadioButton
+        android:id="@+id/soundOffRadio"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:text="@string/off"
+        app:layout_constraintBottom_toBottomOf="@+id/soundOnRadio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/soundOnRadio"
+        app:layout_constraintTop_toTopOf="@+id/soundOnRadio"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="398dp"
+        android:layout_height="48dp"
+        android:text="@string/welcome_to_snake_game"
+        android:textColor="#DA0828"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.134" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
